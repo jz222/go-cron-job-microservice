@@ -8,7 +8,7 @@ Execute `go get` in the root folder to install all dependencies and `go run main
 
 ## API
 
-# `POST` `/add`
+### `POST` `/add`
 Saves and launches a new cron job.
 
 | Property    | Type   | Explanation                                                                                                                                | Required |
@@ -41,7 +41,7 @@ Saves and launches a new cron job.
 }
 ```
 
-# `DELETE` `/delete/:id`
+### `DELETE` `/delete/:id`
 
 Removes a cron job with the given ID from the queue and deletes it from the database.
 
@@ -55,7 +55,7 @@ Removes a cron job with the given ID from the queue and deletes it from the data
 }
 ```
 
-# `GET` `/status/:id`
+### `GET` `/status/:id`
 
 Returns the status for a cron job with the given ID.
 
